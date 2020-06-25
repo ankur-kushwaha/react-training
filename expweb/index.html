@@ -4,24 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src = 'http://localhost:8080/bundle.js'></script>
+  <script src = 'http://localhost:8080/bundle_checkout.js'></script>
 
   
 </head>
 <body>
 
   <header><h1>Expedia</h1></header>
-  <body>
+  <div>
     <section><h1>Trip Details</h1></section>
 
     <section>
       <h1>Insurance</h1>
-      <div id="insurance-container">
+      <div class="insurance-container">
+        
+      </div>
 
+      <div class="insurance-container">
+        
       </div>
     </section>
 
-  </body>
+  </div>
   
   <script>
     var egResponse = {
@@ -30,7 +34,10 @@
 
     InsModule.initCheckout({
       egResponse:egResponse,
-      selector: "#insurance-container"
+      selector: ".insurance-container",
+      onClick:function(){
+        alert('clicked')
+      }
     });
 
   </script>

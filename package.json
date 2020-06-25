@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "babel": "babel src --out-dir build",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --mode development"
@@ -11,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
     "@webpack-cli/init": "^0.3.0",
     "css-loader": "^3.6.0",
     "html-loader": "^1.1.0",
